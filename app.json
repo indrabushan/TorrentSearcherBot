@@ -1,6 +1,6 @@
 {
     "name": "TorrentSearcherBot",
-    "description": "A simple torrent searcher bot made in python. Create your Fork now.",
+    "description": "A simple torrent searcher bot made in python 🐍.",
     "keywords": [
         "telegram",
         "torrent",
@@ -15,11 +15,11 @@
         },
         "START_MESSAGE": {
             "description": "",
-            "value": "*Hi ! I am a simple torrent searcher using @sjprojects's Torrent Searcher api.\n\n\nMade with 🐍 by @KeralasBots*"
+            "value": "*Hi ! I am a simple torrent searcher made by my [MASTER](https://t.me/SI_NN_ER_LS).\n\n\nFor leeching torrent files join our channel [JOIN GROUP](https://t.me/Torrent_To_File_v2)*"
         },
         "FOOTER_TEXT": {
             "description": "",
-            "value": "*Made with ❤️ by @KeralasBots*",
+            "value": "*Made with ❤️ by @SI_NN_ER_LS*",
             "required": false
         }
     },
