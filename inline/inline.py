@@ -50,7 +50,7 @@ def inlinequery(update, context):
             id=uuid4(),
             title="404 Not Found",
             input_message_content=InputTextMessageContent(
-                f"*Sorry there is no results for your query {query}*\n\n{FOOTER_TEXT}", 
+                f"*fuck there is no results for your query {query}*\n\n{FOOTER_TEXT}", 
                 parse_mode="Markdown"
                 ),
             reply_markup=InlineKeyboardMarkup(buttons)
@@ -89,14 +89,14 @@ def button(update, context):
     torrent_name = query.data
     query.edit_message_text(text="Just a moment adding some final touch")
     if torrent_name == None:
-        query.edit_message_text(text="Something went wrong")
+        query.edit_message_text(text="may be next year🐙")
         return
     response = torrent_search(torrent_name)
     if response == None:
-        query.edit_message_text(text="Something went wrong")
+        query.edit_message_text(text="may be next year🐙")
         return
     if len(response) == 0:
-        query.edit_message_text(text="Something went wrong")
+        query.edit_message_text(text="may be next year🐙")
         return
 
     
