@@ -6,8 +6,8 @@
         "torrent",
         "searcher"
     ],
-    "website": "https://github.com/Anandpskerala/TorrentSearcherBot",
-    "repository": "https://github.com/Anandpskerala/TorrentSearcherBot",
+    "website": "https://github.com/indru-dudez/TorrentSearcherBot",
+    "repository": "https://github.com/indru-dudez/TorrentSearcherBot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token",
