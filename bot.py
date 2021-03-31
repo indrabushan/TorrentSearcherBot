@@ -1,7 +1,6 @@
 from telegram.ext import (
     Updater, 
     CommandHandler,
-    MessageHandler,
     Filters,
     CallbackQueryHandler,
     InlineQueryHandler
@@ -27,7 +26,7 @@ def main():
     updater = Updater(token=TOKEN,use_context=True, workers=8)
     logger.info(f"SUCESSFULLY STARTED THE BOT IN {updater.bot.username}")
     start_handler = CommandHandler('start', start)
-    torrent_handler = MessageHandler(Filters.text, torrent)
+    torrent_handler = CommandHandler(find, torrent, pass_args=True)
 
     dispatcher = updater.dispatcher
     dispatcher.add_handler(start_handler)
