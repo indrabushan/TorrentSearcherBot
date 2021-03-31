@@ -17,7 +17,7 @@ def torrent(update: Update, content: CallbackContext):
     if update.message.via_bot != None:
         return
     search_message = content.bot.send_message(chat_id=update.effective_chat.id, text="Searching your torrent file")
-    torrent_name = update.effective_message.text
+    torrent_name = update.effective_message.text.split(' ',1)[1]
     response = torrent_search(torrent_name)
     if len(response) == 0:
         content.bot.edit_message_text(chat_id=update.effective_chat.id, message_id=search_message.message_id, text="No results found")
