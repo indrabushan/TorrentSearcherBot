@@ -26,7 +26,7 @@ def main():
     updater = Updater(token=TOKEN,use_context=True, workers=8)
     logger.info(f"SUCESSFULLY STARTED THE BOT IN {updater.bot.username}")
     start_handler = CommandHandler('start', start)
-    torrent_handler = CommandHandler(find, torrent, pass_args=True)
+    torrent_handler = CommandHandler('find', torrent, pass_args=True)
 
     dispatcher = updater.dispatcher
     dispatcher.add_handler(start_handler)
