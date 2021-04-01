@@ -21,7 +21,7 @@ def start(update: Update, context: CallbackContext):
                                  url=config.appUrl)
         ]]
     reply_markup = InlineKeyboardMarkup(keyboard)
-    send_Message(chat_id, "<b>Hi, I Can Search Torrent Database For Your Query.</b>\n\n"
+    update.message.reply_text("<b>Hi, I Can Search Torrent Database For Your Query.</b>\n\n"
                              "Supports Inline Mode \n-/help For More Info\n",
                     parse_mode='HTML',
                     reply_markup=reply_markup)
