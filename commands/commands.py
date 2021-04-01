@@ -6,12 +6,25 @@ from telegram import (
     Update
 )
 
-from config import START_MESSAGE
+import config
 
 from helpers.torrent import torrent_search
 
 def start(update: Update, context: CallbackContext):
-    context.bot.send_message(chat_id=update.effective_chat.id, text=START_MESSAGE, parse_mode="Markdown")
+    chat_id = update.message.chat.id
+    keyboard = [[
+        InlineKeyboardButton('Support Chat',
+                             url=config.supportChatUrl)
+    ],
+        [
+            InlineKeyboardButton('🕵️MASTER🤖',
+                                 url=config.appUrl)
+        ]]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    bot.sendMessage(chat_id, "<b>Hi, I Can Search Torrent Database For Your Query.</b>\n\n"
+                             "Supports Inline Mode \n-/help For More Info\n",
+                    parse_mode='HTML',
+                    reply_markup=reply_markup)
 
 def torrent(update: Update, content: CallbackContext):
     if update.message.via_bot != None:
