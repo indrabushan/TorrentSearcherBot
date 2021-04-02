@@ -8,6 +8,7 @@ from telegram import (
 from config import FOOTER_TEXT
 
 from helpers.torrent import torrent_search
+from commands.commands import torrent
 
 def inlinequery(update, context):
     """Handles the inline query."""
