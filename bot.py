@@ -32,7 +32,6 @@ def main():
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(torrent_handler)
     dispatcher.add_handler(CallbackQueryHandler(button))
-    dispatcher.add_handler(InlineQueryHandler(inlinequery))
     #dispatcher.add_error_handler(_error)
     updater.start_polling()
     updater.idle()
