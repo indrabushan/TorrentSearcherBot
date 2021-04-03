@@ -37,6 +37,6 @@ def button(update, context):
     site = response[0].get("site")
     torrent_url = response[0].get("url")
     
-    query.edit_message_text(text=f"*Name : {name}\nSize : {size}\nAge : {age}\nLeechers : {leechers}\nNo: of seeds : {seeders}\nType of File : {type_of_file}\nTorrent Url : {torrent_url}*\n\n*Magnet Link : *`{magnet_link}`\n\n*Powered by {site} website*\n\n{FOOTER_TEXT}", parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(buttons))
+    query.edit_message_text(text=f"*Name : {name}\nSize : {size}\nAge : {age}\nLeechers : {leechers}\nNo: of seeds : {seeders}\nType of File : {type_of_file}\nTorrent Url : {torrent_url}*\n\n*Magnet Link : *`{magnet_link}`\n\n*Powered by {site} website*\n\n{FOOTER_TEXT}", parse_mode="Markdown")
 
 
