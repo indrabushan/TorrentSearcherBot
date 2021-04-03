@@ -6,7 +6,7 @@ from telegram.ext import (
     InlineQueryHandler
 )
 from commands.commands import start, torrent
-from inline.inline import button, inlinequery
+from inline.inline import button
 from config import TOKEN
 
 
